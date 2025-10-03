@@ -1,0 +1,33 @@
+{
+    "name": "neondigital/changelog-filament",
+    "version": "0.0.1",
+    "description": "A changelog package for FilamentPHP",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alec Ritson",
+            "email": "alec@neondigital.co.uk"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+        "Neondigital\\ChangelogFilament\\": "src/"
+      }
+    },
+    "extra": {
+      "laravel": {
+        "providers": [
+          "Neondigital\\ChangelogFilament\\ChangelogFilamentServiceProvider"
+        ]
+      }
+    },
+    "minimum-stability": "stable",
+    "require-dev": {
+        "symplify/monorepo-builder": "^12.2"
+    },
+    "require": {
+        "neondigital/changelog": "self.version",
+        "filament/filament": "^3.3.36"
+    }
+}
